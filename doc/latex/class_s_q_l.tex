@@ -1,0 +1,396 @@
+\hypertarget{class_s_q_l}{}\section{S\+QL Class Reference}
+\label{class_s_q_l}\index{S\+QL@{S\+QL}}
+
+
+{\ttfamily \#include $<$sql.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_s_q_l_a7c4e2325de3976159cabc406ad8c962d}{S\+QL} (std\+::string database\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_l_ad598892914c6cb227f30cf672427f572}{add\+User} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Creates a user. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_l_af6d3aa26b727b7667e8e286c4640733d}{delete\+User} (int user\+Id)
+\begin{DoxyCompactList}\small\item\em Deletes a user. \end{DoxyCompactList}\item 
+int \hyperlink{class_s_q_l_a6b6a6875d9c65febbe11ac6b8d682d83}{get\+User} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Returns a user. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_s_q_l_a9fc827b22291dd167b9ee952eb278fd6}{get\+User} (int id)
+\begin{DoxyCompactList}\small\item\em Returns a user. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_l_a3c6333842b20b930924e655f12a3dd66}{add\+Role\+To\+User} (int user\+Id, int role\+Id)
+\begin{DoxyCompactList}\small\item\em Adds a role to an user. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_l_aa3d785796f5fec9fb655a5384573eacb}{remove\+Role\+From\+User} (int user\+Id, int role\+Id)
+\begin{DoxyCompactList}\small\item\em Removes a role from a user. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_l_a74e875b211592f21e4881af899e7e8a3}{create\+Role} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Crates a new role. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_l_a73b473f7777bccbe8ccb0e2fa6a122ba}{delete\+Role} (int id)
+\begin{DoxyCompactList}\small\item\em Drops a role from the database. \end{DoxyCompactList}\item 
+int \hyperlink{class_s_q_l_a6f535fc8ff1a6303ab95e3882c8aa313}{get\+Role} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Returns a role\char`\"{} \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_s_q_l_a87bb8ccf2aeb9bee3b0843eda214676d}{get\+Role} (int id)
+\begin{DoxyCompactList}\small\item\em Returns a role. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_l_a34c269413c9323a7249c821740c5fb36}{add\+Permision\+To\+Role} (int role\+Id, int permission\+Id)
+\begin{DoxyCompactList}\small\item\em Assign permissions to a role. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_l_a2254fe795d047f09cf1228b5a59591af}{remove\+Permision\+From\+Role} (int role\+Id, int permission\+Id)
+\begin{DoxyCompactList}\small\item\em Remove permissions from a role. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_l_a878e54ed185a0cc9e92237da7c4032d1}{create\+Permission} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Create a new permission. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_q_l_a9f0cbf3bec8654c33fd24e41d84f6c6a}{delete\+Permission} (int id)
+\begin{DoxyCompactList}\small\item\em Delete a permission. \end{DoxyCompactList}\item 
+int \hyperlink{class_s_q_l_aa1a27ec895faa8c45dabdd80c558c2d7}{get\+Permission} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Returns a permission. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_s_q_l_a79f54d3abd1591cf0f0653023ddca75d}{get\+Permission} (int id)
+\begin{DoxyCompactList}\small\item\em Returns a permission. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_q_l_a9d67251af02f8dbc34fd921a8bfdf747}\label{class_s_q_l_a9d67251af02f8dbc34fd921a8bfdf747}} 
+char $\ast$ \hyperlink{class_s_q_l_a9d67251af02f8dbc34fd921a8bfdf747}{get\+Error} ()
+\begin{DoxyCompactList}\small\item\em Get error message. \end{DoxyCompactList}\item 
+\hyperlink{class_s_q_l_a1c65a40213ae07fdd8f25bd292b2a68c}{$\sim$\+S\+QL} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_s_q_l}{S\+QL} Object \begin{DoxyAuthor}{Author}
+Derick Vigne 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+M\+IT License 
+\end{DoxyCopyright}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_s_q_l_a7c4e2325de3976159cabc406ad8c962d}\label{class_s_q_l_a7c4e2325de3976159cabc406ad8c962d}} 
+\index{S\+QL@{S\+QL}!S\+QL@{S\+QL}}
+\index{S\+QL@{S\+QL}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{S\+Q\+L()}{SQL()}}
+{\footnotesize\ttfamily S\+Q\+L\+::\+S\+QL (\begin{DoxyParamCaption}\item[{std\+::string}]{database\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Creates the database connection handle 
+\begin{DoxyParams}{Parameters}
+{\em database\+Name} & Name of the S\+Q\+Lite3 database if the database file doesn\textquotesingle{}t exist a new one will be created \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily void} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_a1c65a40213ae07fdd8f25bd292b2a68c}\label{class_s_q_l_a1c65a40213ae07fdd8f25bd292b2a68c}} 
+\index{S\+QL@{S\+QL}!````~S\+QL@{$\sim$\+S\+QL}}
+\index{````~S\+QL@{$\sim$\+S\+QL}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{$\sim$\+S\+Q\+L()}{~SQL()}}
+{\footnotesize\ttfamily S\+Q\+L\+::$\sim$\+S\+QL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Deallocates the database connection handle and memeory used for query response data \begin{DoxyReturn}{Returns}
+{\ttfamily void} 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_q_l_a34c269413c9323a7249c821740c5fb36}\label{class_s_q_l_a34c269413c9323a7249c821740c5fb36}} 
+\index{S\+QL@{S\+QL}!add\+Permision\+To\+Role@{add\+Permision\+To\+Role}}
+\index{add\+Permision\+To\+Role@{add\+Permision\+To\+Role}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{add\+Permision\+To\+Role()}{addPermisionToRole()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+::add\+Permision\+To\+Role (\begin{DoxyParamCaption}\item[{int}]{role\+Id,  }\item[{int}]{permission\+Id }\end{DoxyParamCaption})}
+
+
+
+Assign permissions to a role. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em role\+Id} & Id of the role to be assigned permissions \\
+\hline
+{\em permission\+Id} & Permission to be added to the role \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} Returns true on failure and false on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_a3c6333842b20b930924e655f12a3dd66}\label{class_s_q_l_a3c6333842b20b930924e655f12a3dd66}} 
+\index{S\+QL@{S\+QL}!add\+Role\+To\+User@{add\+Role\+To\+User}}
+\index{add\+Role\+To\+User@{add\+Role\+To\+User}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{add\+Role\+To\+User()}{addRoleToUser()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+::add\+Role\+To\+User (\begin{DoxyParamCaption}\item[{int}]{user\+Id,  }\item[{int}]{role\+Id }\end{DoxyParamCaption})}
+
+
+
+Adds a role to an user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & Id of the user to add the role \\
+\hline
+{\em role\+Id} & Role to be added to the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} Returns true on failure and false on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_ad598892914c6cb227f30cf672427f572}\label{class_s_q_l_ad598892914c6cb227f30cf672427f572}} 
+\index{S\+QL@{S\+QL}!add\+User@{add\+User}}
+\index{add\+User@{add\+User}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{add\+User()}{addUser()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+::add\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Creates a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Username of the new user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} Returns true on failure and false on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_a878e54ed185a0cc9e92237da7c4032d1}\label{class_s_q_l_a878e54ed185a0cc9e92237da7c4032d1}} 
+\index{S\+QL@{S\+QL}!create\+Permission@{create\+Permission}}
+\index{create\+Permission@{create\+Permission}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{create\+Permission()}{createPermission()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+::create\+Permission (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Create a new permission. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the new permission to be created \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} Returns true on failure and false on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_a74e875b211592f21e4881af899e7e8a3}\label{class_s_q_l_a74e875b211592f21e4881af899e7e8a3}} 
+\index{S\+QL@{S\+QL}!create\+Role@{create\+Role}}
+\index{create\+Role@{create\+Role}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{create\+Role()}{createRole()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+::create\+Role (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Crates a new role. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the new role to be created \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} Returns true on failure and false on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_a9f0cbf3bec8654c33fd24e41d84f6c6a}\label{class_s_q_l_a9f0cbf3bec8654c33fd24e41d84f6c6a}} 
+\index{S\+QL@{S\+QL}!delete\+Permission@{delete\+Permission}}
+\index{delete\+Permission@{delete\+Permission}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{delete\+Permission()}{deletePermission()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+::delete\+Permission (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Delete a permission. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id of the permission to be deleted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} Returns true on failure and false on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_a73b473f7777bccbe8ccb0e2fa6a122ba}\label{class_s_q_l_a73b473f7777bccbe8ccb0e2fa6a122ba}} 
+\index{S\+QL@{S\+QL}!delete\+Role@{delete\+Role}}
+\index{delete\+Role@{delete\+Role}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{delete\+Role()}{deleteRole()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+::delete\+Role (\begin{DoxyParamCaption}\item[{int}]{role\+Id }\end{DoxyParamCaption})}
+
+
+
+Drops a role from the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & role\+Id Id of the role to be deleted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} Returns true on failure and false on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_af6d3aa26b727b7667e8e286c4640733d}\label{class_s_q_l_af6d3aa26b727b7667e8e286c4640733d}} 
+\index{S\+QL@{S\+QL}!delete\+User@{delete\+User}}
+\index{delete\+User@{delete\+User}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{delete\+User()}{deleteUser()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+::delete\+User (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Deletes a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & User ID of the user to drop from the database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} Returns true on failure and false on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_aa1a27ec895faa8c45dabdd80c558c2d7}\label{class_s_q_l_aa1a27ec895faa8c45dabdd80c558c2d7}} 
+\index{S\+QL@{S\+QL}!get\+Permission@{get\+Permission}}
+\index{get\+Permission@{get\+Permission}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{get\+Permission()}{getPermission()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int S\+Q\+L\+::get\+Permission (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Returns a permission. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the permission to be Returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} Id of the permission 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_a79f54d3abd1591cf0f0653023ddca75d}\label{class_s_q_l_a79f54d3abd1591cf0f0653023ddca75d}} 
+\index{S\+QL@{S\+QL}!get\+Permission@{get\+Permission}}
+\index{get\+Permission@{get\+Permission}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{get\+Permission()}{getPermission()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily char $\ast$ S\+Q\+L\+::get\+Permission (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Returns a permission. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id of the permission to be Returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily char $\ast$} char array containing the name of the permission 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_a6f535fc8ff1a6303ab95e3882c8aa313}\label{class_s_q_l_a6f535fc8ff1a6303ab95e3882c8aa313}} 
+\index{S\+QL@{S\+QL}!get\+Role@{get\+Role}}
+\index{get\+Role@{get\+Role}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{get\+Role()}{getRole()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int S\+Q\+L\+::get\+Role (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+Returns a role\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the new role to be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} Returns the Roles ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_a87bb8ccf2aeb9bee3b0843eda214676d}\label{class_s_q_l_a87bb8ccf2aeb9bee3b0843eda214676d}} 
+\index{S\+QL@{S\+QL}!get\+Role@{get\+Role}}
+\index{get\+Role@{get\+Role}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{get\+Role()}{getRole()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily char $\ast$ S\+Q\+L\+::get\+Role (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Returns a role. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id of role to be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily char $\ast$} Char array containing the roles name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_a6b6a6875d9c65febbe11ac6b8d682d83}\label{class_s_q_l_a6b6a6875d9c65febbe11ac6b8d682d83}} 
+\index{S\+QL@{S\+QL}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int S\+Q\+L\+::get\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Returns a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Username of the user to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} Returns the first instance of the user id in the database 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_a9fc827b22291dd167b9ee952eb278fd6}\label{class_s_q_l_a9fc827b22291dd167b9ee952eb278fd6}} 
+\index{S\+QL@{S\+QL}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily char $\ast$ S\+Q\+L\+::get\+User (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Returns a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id of the user to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily char $\ast$} Returns a char array containing the username of the corresponding user id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_a2254fe795d047f09cf1228b5a59591af}\label{class_s_q_l_a2254fe795d047f09cf1228b5a59591af}} 
+\index{S\+QL@{S\+QL}!remove\+Permision\+From\+Role@{remove\+Permision\+From\+Role}}
+\index{remove\+Permision\+From\+Role@{remove\+Permision\+From\+Role}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{remove\+Permision\+From\+Role()}{removePermisionFromRole()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+::remove\+Permision\+From\+Role (\begin{DoxyParamCaption}\item[{int}]{role\+Id,  }\item[{int}]{permission\+Id }\end{DoxyParamCaption})}
+
+
+
+Remove permissions from a role. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em role\+Id} & Id of the role to have permissions removed \\
+\hline
+{\em permission\+Id} & Permission to be removed from the role \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} Returns true on failure and false on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_l_aa3d785796f5fec9fb655a5384573eacb}\label{class_s_q_l_aa3d785796f5fec9fb655a5384573eacb}} 
+\index{S\+QL@{S\+QL}!remove\+Role\+From\+User@{remove\+Role\+From\+User}}
+\index{remove\+Role\+From\+User@{remove\+Role\+From\+User}!S\+QL@{S\+QL}}
+\subsubsection{\texorpdfstring{remove\+Role\+From\+User()}{removeRoleFromUser()}}
+{\footnotesize\ttfamily bool S\+Q\+L\+::remove\+Role\+From\+User (\begin{DoxyParamCaption}\item[{int}]{user\+Id,  }\item[{int}]{role\+Id }\end{DoxyParamCaption})}
+
+
+
+Removes a role from a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & Id of the user to remove the role \\
+\hline
+{\em role\+Id} & Role to be removed from the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} Returns true on failure and false on success 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sql.\+h\item 
+sql.\+cpp\end{DoxyCompactItemize}
